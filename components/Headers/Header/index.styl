@@ -1,0 +1,36 @@
+$color-white = #fff
+$color-white65 = rgba($color-white, 0.65)
+
+.header
+    padding 6u 3u 4u
+    +tablet()
+        padding 8u 6u 5u
+    +desktop()
+        padding 8u 8u 5u
+    +wide()
+        padding 14u 14u 10u
+
+.title
+    font-family Helvetica
+    font-size 4u
+    line-height 5u
+    font-weight 300
+    color $color-white
+    text-align center
+    +tablet()
+        font-size 5u
+        line-height 6u
+
+.text
+    margin-top 1u
+    font-family Helvetica
+    font-size 2u
+    line-height 2u
+    font-weight 300
+    color $color-white65
+    text-align center
+    +tablet()
+        font-size 3u
+        line-height 3u
+    +wide()
+        margin-top 2u

@@ -1,0 +1,42 @@
+$color-white = #fff
+$color-dark = #636363
+$color-bg = #f7f7f7
+
+.nav
+    display none
+    +tablet()
+        padding 2u
+        display flex
+        flex-direction row
+        justify-content center
+        background-color $color-bg
+        border-radius 1u 1u 0 0
+    +wide()
+        padding 3u
+
+.navItem
+    height 4u
+    margin-left 2u
+    display flex
+    justify-content center
+    border-radius 1u
+    +wide()
+        height 6u
+
+.navItem.first
+    margin-left 0
+
+.navItem.active
+    background-color $color-white
+
+.navText
+    padding 0 2u
+    font-family Helvetica
+    font-size 2u
+    line-height 2u
+    font-weight 300
+    color $color-dark
+    +wide()
+        padding 0 3u
+        font-size 3u
+        line-height 3u

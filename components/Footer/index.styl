@@ -1,0 +1,154 @@
+$color-white = #fff
+$color-white65 = rgba($color-white, 0.65)
+$color-dark = #636363
+$color-gray = #ddd
+
+.link
+    text-decoration underline
+    text-decoration-color $color-white65
+
+.footer
+    padding 5u 2u 10u
+    +tablet()
+        padding 8u 6u 13u
+    +desktop()
+        padding 8u 8u 13u
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-between
+    +wide()
+        padding 14u 14u 21u
+
+.section
+    margin-top 6u
+    +desktop()
+        width 48%
+        margin-top 0
+
+.section.first
+    margin-top 0
+
+.section.last
+    +desktop()
+        width 100%
+        margin-top 8u
+    +wide
+        margin-top 10u
+
+.title
+    font-family Helvetica
+    font-size 3u
+    line-height 3u
+    font-weight 300
+    color $color-white
+    +wide()
+        font-size 4u
+        line-height 4u
+
+.text
+    margin-top 2u
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-white65
+    +wide()
+        margin-top 3u
+        font-size 3u
+        line-height 4u
+
+.btn
+    height 5u
+    margin-top 4u
+    border 1px solid $color-gray
+    border-color $color-white65
+    border-radius 1u
+    +tablet()
+        width 15u
+        height 5u
+    +wide()
+        width 22u
+        height 8u
+        margin-top 6u
+
+.btnText
+    margin auto
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-white
+    +wide()
+        font-size 3u
+        line-height 4u
+
+.contactRow
+    margin-top 2u
+    display flex
+    flex-direction row
+
+.contactRow.first
+    +wide()
+        margin-top 3u
+
+.contactType
+    width 25%
+    max-width 13u
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 400
+    color $color-white
+    +wide()
+        max-width 16u
+        font-size 3u
+        line-height 4u
+
+.contact
+    width 75%
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-white65
+    +wide()
+        font-size 3u
+        line-height 4u
+
+.soc
+    margin-top 6u
+    display flex
+    flex-direction row
+    +wide()
+        margin-top 8u
+
+.socItem
+    width 5u
+    height 5u
+    margin-left 1u
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-white65
+    border-radius 2.5u
+    +wide()
+        width 7u
+        height 7u
+        margin-left 2u
+        border-radius 3.5u
+
+.socItem.first
+    margin-left 0
+
+.socIcon
+    color $color-white
+
+.copy
+    font-family Helvetica
+    font-size 2u
+    line-height 2u
+    font-weight 300
+    color $color-white65
+    +desktop()
+        text-align center

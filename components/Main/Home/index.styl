@@ -1,0 +1,346 @@
+$color-bg = #935d8c
+$color-white = #fff
+$color-dark = #636363
+$color-gray = #ddd
+
+$color-pink = #efa8b0
+$color-purple = #c79cc8
+$color-violet = #a89cc8
+$color-skyBlue = #9bb2e1
+$color-blue = #8cc9f0
+
+.pinkIcon
+    color $color-pink
+.violetIcon
+    color $color-violet
+.blueIcon
+    color $color-blue
+
+.btn
+    width 100%
+    height 5u
+    border 1px solid $color-gray
+    border-radius 1u
+    +tablet()
+        width 15u
+        height 5u
+    +wide()
+        width 22u
+        height 8u
+
+.btn.blue
+    border-color $color-blue
+    background-color $color-blue
+
+.introBtn
+    margin 4u auto 0
+    +desktop()
+        margin 4u 0 0
+    +wide()
+        margin-top 6u
+
+.sectionBtn
+    margin 4u auto 0
+    +tablet()
+        margin-top 6u
+    +wide()
+        margin-top 8u
+
+.btnText
+    margin auto
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    +wide()
+        font-size 3u
+        line-height 4u
+
+.btnText.light
+    color $color-white
+
+.btnsGroup
+    margin-top 4u
+    +tablet()
+        margin-top 6u
+        display flex
+        flex-direction row
+        justify-content center
+    +wide()
+        margin-top 8u
+
+.btn.next
+    margin-top 2u
+    +tablet()
+        margin-top 0
+        margin-left 2u
+    +wide()
+        margin-left 3u
+
+.main
+    background-color $color-white
+    border-radius 1u
+
+.section
+    padding 6u 3u
+    border-top-color $color-gray
+    border-top-width 1px
+    +tablet()
+        padding 8u 6u
+    +desktop()
+        padding 8u
+    +wide()
+        padding 14u
+
+.section.first
+    border-top-width 0
+    +desktop()
+        display flex
+        flex-direction row-reverse
+        justify-content space-between
+
+.sectionTitle
+    font-family Helvetica
+    font-size 3u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    text-align center
+    +tablet()
+        font-size 4u
+        line-height 4u
+
+.sectionTitle.introTitle
+    margin-top 4u
+    +desktop()
+        text-align left
+
+.sectionHr
+    width 10u
+    height 2px
+    margin 2u auto 3u
+    background-color $color-bg
+    +tablet()
+        margin 3u auto 4u
+    +wide()
+        margin 4u auto 6u
+
+.sectionHr.introHr
+    +desktop()
+        margin-left 0
+        margin-right 0
+
+.sectionText
+    margin-top 1u
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    text-align center
+    +tablet()
+        font-size 3u
+        line-height 4u
+
+.sectionText.subtitle
+    max-width 95u
+    margin-left auto
+    margin-right auto
+
+.sectionText.justifyText
+    text-align justify
+    +desktop()
+        column-count 2
+
+.sectionText.introText
+    +desktop()
+        text-align left
+
+.introImgContainer
+    width 26u
+    height 26u
+    margin 0 auto
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-gray
+    border-radius 13u
+    +tablet()
+        width 34u
+        height 34u
+        border-radius 17u
+    +desktop()
+        margin 0
+    +wide()
+        width 49u
+        height 49u
+        border-radius 24.5u
+
+.introImg
+    width 24u
+    height 24u
+    border-radius 12u
+    +tablet()
+        width 32u
+        height 32u
+        border-radius 16u
+    +wide()
+        width 45u
+        height 45u
+        border-radius 22.5u
+
+.introContent
+    +desktop()
+        width 65%
+
+.features
+    +tablet()
+        display flex
+        flex-direction row
+        flex-wrap wrap
+        justify-content space-evenly
+
+.feature
+    margin-top 4u
+    +tablet()
+        width 37u
+        margin-top 0
+    +desktop()
+        width 32u
+    +wide()
+        min-width 39u
+
+.feature.first
+    margin-top 0
+
+.feature.last
+    +tablet()
+        margin-top 6u
+    +desktop()
+        margin-top 0
+
+.featureIconContainer
+    width 18u
+    height 18u
+    margin 0 auto
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-gray
+    border-radius 9u
+    +tablet()
+        width 23u
+        height 23u
+        border-radius 11.5u
+    +wide()
+        width 32u
+        height 32u
+        border-radius 16u
+
+.featureIcon
+    width 16u
+    height 16u
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid $color-gray
+    border-radius 8u
+    +tablet()
+        width 21u
+        height 21u
+        border-radius 10.5u
+    +wide()
+        width 28u
+        height 28u
+        border-radius 14u
+
+.featureTitle
+    margin-top 3u
+    font-family Helvetica
+    font-size 2.5u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    text-align center
+    +tablet()
+        margin-top 4u
+    +wide()
+        margin-top 6u
+        font-size 3.5u
+        line-height 4u
+
+.featureText
+    margin-top 2u
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    text-align center
+    +wide()
+        margin-top 3u
+        font-size 3u
+        line-height 4u
+
+.statistics
+    margin 4u 0 3u
+    +tablet()
+        margin 6u 0
+        display flex
+        flex-direction row
+    +wide()
+        margin 8u 0
+
+.statistic
+    padding 3u
+    +tablet()
+        width 20%
+    +wide()
+        padding 4u
+
+.statistic.first
+    border-radius 1u 1u 0 0
+    +tablet()
+        border-radius 1u 0 0 1u
+.statistic.last
+    border-radius 0 0 1u 1u
+    +tablet()
+        border-radius 0 1u 1u 0
+
+.statistic.pink
+    background-color $color-pink
+.statistic.purple
+    background-color $color-purple
+.statistic.violet
+    background-color $color-violet
+.statistic.skyBlue
+    background-color $color-skyBlue
+.statistic.blue
+    background-color $color-blue
+
+.statisticIcon
+    margin 0 auto
+    color $color-white
+
+.statisticValue
+    font-family Helvetica
+    font-size 5u
+    line-height 5.5u
+    font-weight 300
+    color $color-white
+    text-align center
+    +tablet()
+        font-size 3u
+        line-height 3.5u
+    +desktop()
+        font-size 4u
+        line-height 4.5u
+
+.statisticText
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-white
+    text-align center

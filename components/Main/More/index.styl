@@ -1,0 +1,58 @@
+$color-white = #fff
+$color-dark = #636363
+
+.main
+    background-color $color-white
+    border-radius 1u
+
+.pageImg
+    width 100%
+    height 16u
+    border-radius 1u 1u 0 0
+    +tablet()
+        height 34u
+    +desktop()
+        height 45u
+    +wide()
+        height 67u
+
+.pageContent
+    margin 3u 3u 6u
+    +tablet()
+        margin 8u 6u
+    +desktop()
+        margin 8u
+    +wide()
+        margin 14u
+
+.pageH
+    margin-top 4u
+    font-family Helvetica
+    font-size 3u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    +wide()
+        margin-top 6u
+        font-size 4u
+        line-height 4u
+
+.pageH.first
+    margin-top 0
+
+.pageP
+    margin-top 4u
+    font-family Helvetica
+    font-size 2u
+    line-height 3u
+    font-weight 300
+    color $color-dark
+    +wide()
+        margin-top 6u
+        font-size 3u
+        line-height 4u
+
+.pageP.first
+    margin-top 2u
+    +wide()
+        margin-top 3u
